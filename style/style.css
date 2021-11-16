@@ -1,0 +1,119 @@
+html, body{
+    box-sizing: border-box;
+    background-image: url(../images/webb.png);
+    background-repeat: repeat;
+    font-style: normal;
+    font: black;
+    font-family: sans-serif;
+}
+
+#characters-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ .character-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 2%;
+    height: 380px;
+    width: 200px;
+    border: 1px solid white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+#red-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url(../images/red_riot2.jpg);
+    background-size: cover;
+    border: 1px solid black;
+}
+#red{
+    border: 1px solid black;
+}
+
+#red-header{
+    background-color: rgb(187, 53, 53);
+}
+
+#roy-image{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url(../images/roy_mustang.jpg);
+    background-size: cover;
+    border: 1px solid black;
+}
+
+#roy{
+    border: 1px solid black;
+}
+
+#roy-header{
+    background-color: #12127e;
+}
+
+#kamado-image{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url(../images/tanjiro_kamado.jpg);
+    background-size: cover;
+    border: 1px solid black;
+}
+
+#kamado{
+    border: 1px solid black;
+}
+
+#kamado-header{
+    background-color: violet;
+}
+
+.card-footer{
+    color: black;
+    background-color: white;
+    border-top: 1px solid black; 
+}
+
+.links{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.links > a{
+    color: black;
+    transition: 350ms;
+}
+
+.links > a:hover{
+    color: red;
+}
+
+@media all and (max-width: 900px){
+    #characters-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+    
+    }
+}
